@@ -11,8 +11,9 @@
 #define HTTP_PORT      80
 
 
-#define IR_LED_PIN     14          
-#define ONE_WIRE_BUS   4           
+// ── GPIO ─────────────────────────────────────────────────────────────────────
+#define IR_LED_PIN     4           // IR LED (COOLIX)   – ESP32 GPIO4
+#define ONE_WIRE_BUS   27          // DS18B20 data       – ESP32 GPIO27          
 
 // ── Authentication ────────────────────────────────────────────────────────────
 #define AUTH_USERNAME  
