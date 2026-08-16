@@ -187,4 +187,16 @@ alongside scheduling and temperature-mode logic every loop iteration.
 
 ## Version
 
-ESP32 build — Phase 3 + Cooling Verification, PsychicHttp (HTTP-only, no TLS).
+ESP32 build — full feature set:
+
+IR AC control (Coolix protocol): power, temperature, mode, fan, swing, turbo, sleep
+DS18B20 room temperature sensing with rolling history
+Time-based scheduling (up to 10 schedules)
+Temperature-triggered automatic power on/off
+Automatic post-power-on cooling verification with IR retransmit
+Self-hosted web dashboard and REST API (PsychicHttp, HTTP-only — no TLS)
+Cookie-based session authentication with in-UI credential management
+WiFi credential management from the dashboard, stored in ESP32 Preferences (NVS)
+AP fallback for setup/recovery when home WiFi is unreachable
+OTA firmware updates
+mDNS (smartac.local) for access without knowing the device's IP
